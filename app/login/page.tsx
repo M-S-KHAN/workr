@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Image from "next/image";
+import img from "../../public/images/logo-main-circle.png";
 
 export default function Login() {
     return (
@@ -6,9 +8,9 @@ export default function Login() {
             <Head>
                 <title>Login</title>
             </Head>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <div className="card-body">
-                    <h2 className="card-title justify-center">Login</h2>
+            <div className="card w-96 bg-base-100 shadow-xl m-10">
+                <div className="card-body flex justify-center items-center">
+                    <Image src={img} alt="Logo Image" width={150} height={150} className="m-2 "></Image>
                     <form className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
